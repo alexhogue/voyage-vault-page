@@ -1,53 +1,68 @@
 @font-face {
-  font-family: 'BasisGrotesk'; 
-  src: url('typefaces/BasisGrotesquePro-Light 2.otf'); 
+  font-family: "BasisGrotesk";
+  src: url("typefaces/BasisGrotesquePro-Light 2.otf");
 }
 @font-face {
-  font-family: 'GT'; 
-  src: url('typefaces/GT-Walsheim-Pro-Light.otf'); 
+  font-family: "GT";
+  src: url("typefaces/GT-Walsheim-Pro-Light.otf");
 }
 @font-face {
-  font-family: 'MonumentGrotesk'; 
-  src: url('typefaces/monument-grotesk-regular.otf'); 
+  font-family: "GT-med";
+  src: url("typefaces/GT-Walsheim-Pro-Medium.otf");
 }
 @font-face {
-  font-family: 'GoodSans'; 
-  src: url('typefaces/GoodSans-Thin.otf'); 
+  font-family: "MonumentGrotesk";
+  src: url("typefaces/monument-grotesk-regular.otf");
 }
 @font-face {
-  font-family: 'Plaak'; 
-  src: url('typefaces/Plaak-25Light.otf'); 
+  font-family: "GoodSans";
+  src: url("typefaces/GoodSans-Thin.otf");
+}
+@font-face {
+  font-family: "Plaak";
+  src: url("typefaces/Plaak-25Light.otf");
 }
 
-h1{
+#website {
+  display: flex;
+  flex-direction: column;
+}
+h1 {
   font-size: 44px;
-  font-family: 'GT';
+  font-family: "GT-med";
 }
-h2{
-  font-size: 24px;
-  font-family: "GoodSans";
+h2 {
+  font-size: 26px;
+  font-family: "GT-med";
   color: #474747;
 }
-h3{
+h3 {
   font-size: 22px;
-  font-family: 'Plaak';
+  font-family: "Plaak";
   min-width: 150px;
   color: #474747;
 }
-h4{
-  font-size: 18px;
-  font-family: 'BasisGrotesk';
-  min-width: 150px;
-  color: #474747;
-}
-h5{
+h4 {
   font-size: 20px;
-  font-family: 'MonumentGrotesk';
+  font-family: "GT";
+  min-width: 150px;
+  color: #474747;
 }
-p, li, th{
-  font-size:18px;
-  font-family: 'BasisGrotesk'; 
-  line-height: 30px;
+h5 {
+  font-size: 20px;
+  font-family: "MonumentGrotesk";
+}
+p,
+li,
+th {
+  font-size: 18px;
+  font-family: "BasisGrotesk";
+  line-height: 28px;
+}
+label, button{
+  font-size: 14px;
+  font-family: "BasisGrotesk";
+  line-height: 24px;
 }
 li:not(:last-child){
   margin-bottom: 10px;
@@ -79,17 +94,19 @@ ul {
   width: 60%;
 }
 
-#titleArea{
-  margin-left: 12%;
-  margin-right: 12%;
-  margin-top: 8%;
-  /* margin-bottom: 8%; */
-}
-#overview{
-  margin-left: 12%;
-  margin-right: 12%;
+.section {
+  margin-left: 15%;
+  margin-right: 15%;
   margin-top: 4%;
-  margin-bottom: 4%;
+}
+.h3-section {
+  margin-top: 6%;
+}
+#titleArea{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 4%;
+  /* margin-bottom: 8%; */
 }
 #overviewContent{
   display: flex;
@@ -98,10 +115,9 @@ ul {
 #tools{
   min-width: 200px;
 }
-#partOne, #partTwo {
-  margin-left: 12%;
-  margin-right: 12%;
-  margin-bottom: 4%;
+.overview-text{
+  margin-bottom: 0px;
+  margin-top: 15px;
 }
 #summarySec1, #summarySec2{
   display:flex;
@@ -113,6 +129,25 @@ ul {
 }
 #planning{
   width: 85%;
+}
+#planning-sec{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+#initial-img{
+  width: 60%;
+  height: fit-content;
+  min-width: 250px;
+  border: 2px solid rgb(239, 239, 239);
+}
+#initial-writing-sec{
+  width:30%;
+  min-width: 250px;
+}
+#arrow{
+  width: 13%;
 }
 #functionality, #takeaways, #planning, #analysis, #imageSection{
   margin-top: 4%;
@@ -167,9 +202,9 @@ a:hover{
 }
 
 #conclusion{
-  margin-bottom: 12%;
-  margin-left: 12%;
-  margin-right: 12%;
-  margin-top: 8%;
+  margin-bottom: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 4%;
   min-width: 325px;
 }

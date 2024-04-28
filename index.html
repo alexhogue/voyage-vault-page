@@ -8,11 +8,10 @@
   <body>
     <div id="titleArea">
         <h1>Voyage Vault</h1>
-        <h2>Create your dream travel bucket list!</h2>
-        <hr>
+        <h4>Create your dream travel bucket list!</h4>
     </div>
-
-    <div id="overview">
+    <div><hr /></div>
+    <div id="overview" class="section">
       <h2>Overview</h2>
       <div id="overviewContent">
         <div>
@@ -23,13 +22,15 @@
             selections "vault".</p>
         </div>
         <div id="tools">
-          <h3>Tools:</h3>
+          <h3 class="overview-text">Project Focus:</h3>
+          <p>UI/UX design, front-end development</p>
+          <h3 class="overview-text">Tools:</h3>
           <p>Figma, ReactJS, Procreate</p>
         </div>
       </div>
     </div>
 
-    <div id="partOne">
+    <div id="partOne" class="section">
       <h2>Preperation</h2>
       <p>I began the design process by analyzing and drawing comparisons between various existing interfaces that implement a favoriting
         feature in order to figure out the clearest and most effective way to implement my travel bucket list builder.
@@ -92,23 +93,28 @@
 
           <div id="summary">
             <div id="summarySec1">
-              <h3>Importance of visual layout</h3>
-              <p>Based on the Competitive Comparison chart, it is clearly important that a favorite function be intuitive and clear to 
-                users. This includes how the items are displayed visually on the interface. The aspects that were most successful between these 
-                three interfaces include displaying many options to the user directly on the main page so that a user can scroll through the options 
-                without having to click to other pages. Netflix and TripAdvisor do this, whereas Goodreads requires a user to click on a genre 
-                before viewing all options. Forcing users to make choices can be less effective than letting them browse freely. All three sites employ a 
-                similar visual structure that works effectively; a grided layout of options creates visual hierarchy and use of repeated 
-                forms that clearly communicate their function and orient the user on the page. </p>
+              <h3>Importance of Visual layout</h3>
+              <div>
+              <p>Based on the Competitive Comparison, it is clearly important that a favorite function is intuitive and clear, 
+                including how items are displayed visually on the interface. The most successful aspects between the 
+                three interfaces are displaying the options to the user immediately on the main page so that they can scroll through 
+                without having to navigate to other pages. Netflix and TripAdvisor do this whereas Goodreads requires a user to click on a genre 
+                before viewing all options; forcing users to make choices can be less effective than letting them browse freely.</p>
+                <p>All three sites employ a similar visual structure that works effectively; a grided layout of options creates visual 
+                hierarchy and use of repeated forms that clearly convey their function and orient the user on the page. </p>
+              </div>
             </div>
             <div id="summarySec2">
               <h3>Importance of intuitive flow</h3>
-              <p>Making the favorite action intuitive is equally important; TripAdvisor uses a simple heart icon, whereas Netflix 
+              <div>
+                <p>Making the favorite function intuitive is equally important; TripAdvisor uses a simple heart icon, whereas Netflix 
                 requires hover for the like option to appear, and Goodreads has numerous like/save/rating options that may be too 
-                wordy and confusing for a user. Additionally, clear “unliking” is important to allow users flexibility to modify their 
-                lists or rectify errors; Netflix does this very clearly by simply allowing users to click the like button again to 
-                unlike it, whereas Goodreads and TripAdvisor require additional steps. All three sites provided the user with effective 
+                wordy and confusing for a user.</p> 
+                <p>Clear “unliking” is also important to allow users flexibility to modify their 
+                lists or rectify errors; Netflix does this very clearly by allowing users to simply click the like button again to 
+                unlike, whereas Goodreads and TripAdvisor require additional steps. All three sites provided the user with effective 
                 feedback when liking items to communicate a user’s completed and successful action. </p>
+              </div>
             </div>
           </div>
           <br>
@@ -122,16 +128,29 @@
               <li>Use clear icons for liking items without extra clicks needed</li>
               <li>Easy removal of items once added</li>
             </uL>
+            <div id="initial-design" class="h3-section">
+              <h3>Initial Layout</h3>
+              <div id="planning-sec">
+                <img id="initial-img" src="assets/initial.png"/>
+                <div id="initial-writing-sec">
+                  <p>This is my initial layout design in Figma. I focused on clearly defined sections using
+                    a card layout. </p>
+                  <p>However, I was not satisfied with the design and revised it to be
+                    more clean and refined with less overpowering divisions and more intitional pops of color (see below).</p>
+                  <!-- <img id="arrow" src="assets/arrowicon.png"/> -->
+                </div>
+              </div>
+            </div>
           </div>
         </div>
     </div>
 
-    <div id="partTwo">
-      <h2>Design</h2>
+    <div id="partTwo" class="section">
+      <h2>Final Design</h2>
         <div id="planning" >
           <h3>Planning</h3>
           <p>I began by planning out my design using Figma with a focus on clarity and accessibility.</p>
-          <p>Using the information gleaned from my competitive comparison, I took the elements from the three interfaces
+          <p>Using the information gleaned from my competitive comparison and initial design, I took the elements from the three interfaces
             that were most effective, and revised elements that were less effective.</p>
         </div>
         <div id="analysis">
@@ -161,7 +180,7 @@
           <div id="imageExamples">
             <div id="writingSec">
               <h3>Illustrations</h3>
-              <p id="imageWriting">Additionally, I created colorful illustrations to make the page more visually engaging and to capture the excitment 
+              <p id="imageWriting">I created colorful illustrations to make the page more visually engaging and to capture the excitment 
               and discovery of travel.</p>
             </div>
             <img id="plane" src="assets/plane.png"/>
@@ -188,9 +207,9 @@
     <div id="conclusion">
       <h2>Reflections</h2>
       <p>With this project, I learned a lot about designing and building an intuitive and functional interactive interface. I 
-        refined my skills in programming with React to implement my UI design after completing the UI/UX research and design process. I
-        also learned about the considerations and intericacies that go into building an interface at both a the design stage
-        as well as the implementation stage; both require clear planning in order to figure out the best way to acheive the project's
+        refined my skills in programming with React to implement my UI design after completing the design process. I
+        also learned about the considerations and intricacies that go into building an interface at both a the design stage
+        and the implementation stage; both require structured planning in order to figure out the best way to acheive the project
         goal. I look forward to continuing to develop my design and front-end programming skills. </p>
       <div id="takeaways">
         <h3>Key Takeaways</h3>
